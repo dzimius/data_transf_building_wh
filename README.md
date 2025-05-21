@@ -18,12 +18,14 @@ Project based on the Online Retail Dataset from from Kaggle, which contains data
 
 ## 🔧 Project Overview
 
+insert_data.ipynb :
 - The project begins by loading the CSV file into a Python notebook.
 - Additional random client data (first name, last name, email) is generated using the 'names' library.
 - The enriched dataset is loaded into a SQL table.
 
 This enriched data in the SQL table serves as the starting point for creating a Star Schema
 
+data_clean_create_wh.ipynb: 
 - Load data into Python Notebook using SQLAlchemy
 - Perform Data Analysis and Cleaning with pandas
 - Predict Product Category and Color based on Product Description using a transformer-based LLM model
