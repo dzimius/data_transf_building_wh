@@ -18,14 +18,14 @@ Project based on the Online Retail Dataset from from Kaggle, which contains data
 
 ## 🔧 Project Overview
 
-insert_data.ipynb :
+(`insert_data.ipynb`) :
 - The project begins by loading the CSV file into a Python notebook.
 - Additional random client data (first name, last name, email) is generated using the 'names' library.
 - The enriched dataset is loaded into a SQL table.
 
 This enriched data in the SQL table serves as the starting point for creating a Star Schema
 
-data_clean_create_wh.ipynb: 
+(`data_clean_create_wh.ipynb`): 
 - Load data into Python Notebook using SQLAlchemy
 - Perform Data Analysis and Cleaning with pandas
 - Predict Product Category and Color based on Product Description using a transformer-based LLM model
@@ -33,4 +33,20 @@ data_clean_create_wh.ipynb:
 - Create the database schema using SQL queries
 - Insert dimensional and fact data using BULK INSERT
 
+Dimensional Data Model:
+
+
 ![Star Schema Overview](DatabaseDiagram.png)
+
+## 📊 Data Analysis (SQL & Power BI)
+
+Based on the created Data Warehouse, key statistics are calculated using SQL queries (`query_wh.ipynb`).
+
+Additionally, a Power BI report has been created to visualize the data:  
+
+
+![PowerBI_report](power_bi_report.png)
+
+
+
+
